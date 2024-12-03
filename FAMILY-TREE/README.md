@@ -34,6 +34,13 @@ Person:
 Implementation:  
 - management of profiles (dev, test, cloud, prod)
 
+###########
+
+DATABASE CONNECTIVITY
+
+    - Hibernate
+    - spring-boot-starter-data-jpa
+
 
 
 ########### Devops Tools and Rules 
