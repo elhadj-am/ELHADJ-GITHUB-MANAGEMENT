@@ -26,7 +26,7 @@ Person:
 - Immediate Family (Parents)  
 - Siblings  
 - Children  
-- Other Close Relatives (Cousins, Grandparents)
+- Other Close Relatives (Cousins, Grandparentsn aunts)
 
 
 ###########
