@@ -1,10 +1,11 @@
-package pro_dev.elhadj_spring_boot.Student;
+package pro_dev.elhadj_spring_boot.school;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import pro_dev.elhadj_spring_boot.Student.Student;
 
 import java.util.List;
 

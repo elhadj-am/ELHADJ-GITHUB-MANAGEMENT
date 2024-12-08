@@ -1,6 +1,7 @@
-package pro_dev.elhadj_spring_boot.Student;
+package pro_dev.elhadj_spring_boot.studentProfile;
 
 import jakarta.persistence.*;
+import pro_dev.elhadj_spring_boot.Student.Student;
 
 @Entity
 public class StudentProfile {

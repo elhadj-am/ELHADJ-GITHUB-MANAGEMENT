@@ -1,4 +1,4 @@
-package pro_dev.elhadj_spring_boot.Student;
+package pro_dev.elhadj_spring_boot.school;
 
 
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class SchoolService {
     }
 
     public SchoolDto getSchoolById(Integer id) {
-        School school = schoolRepository.findById(id).orElse(null);
+        School school = schoolRepository.findById(id).orElse(new School());
         return schoolMapper.toSchoolDto(school);
     }
 

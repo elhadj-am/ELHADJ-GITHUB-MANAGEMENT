@@ -1,10 +1,7 @@
 package pro_dev.elhadj_spring_boot.Student;
 
 import org.springframework.stereotype.Service;
-import pro_dev.elhadj_spring_boot.Student.School;
-import pro_dev.elhadj_spring_boot.Student.Student;
-import pro_dev.elhadj_spring_boot.Student.StudentDto;
-import pro_dev.elhadj_spring_boot.Student.StudentResponseDto;
+import pro_dev.elhadj_spring_boot.school.School;
 
 @Service
 public class StudentMapper {

@@ -1,4 +1,4 @@
-package pro_dev.elhadj_spring_boot.Student;
+package pro_dev.elhadj_spring_boot.school;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

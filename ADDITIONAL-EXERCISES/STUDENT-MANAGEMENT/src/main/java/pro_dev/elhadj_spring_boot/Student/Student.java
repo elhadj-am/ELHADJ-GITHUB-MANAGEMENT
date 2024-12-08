@@ -3,6 +3,8 @@ package pro_dev.elhadj_spring_boot.Student;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import pro_dev.elhadj_spring_boot.school.School;
+import pro_dev.elhadj_spring_boot.studentProfile.StudentProfile;
 
 @Entity
 @Table(name= "T-STUDENT")
