@@ -3,7 +3,7 @@ package pro_dev.elhadj_spring_boot;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import pro_dev.elhadj_spring_boot.old.MyFirstClass;
+import pro_dev.elhadj_spring_boot.old@.MyFirstClass;
 
 @Configuration
 public class ApplicationConfig {
