@@ -1,5 +1,6 @@
 package pro_dev.elhadj_spring_boot.Student;
 
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,7 +36,7 @@ public class StudentController {
 
 
     @PostMapping("/students")
-    public StudentResponseDto saveStudent(@RequestBody StudentDto studentDto) {
+    public StudentResponseDto saveStudent(@Valid @RequestBody StudentDto studentDto) {
         return this.studentService.saveStudent(studentDto);
     }
 
