@@ -50,8 +50,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String firstname, String lastname, String email, int age) {
-        this.id = id;
+    public Student(String firstname, String lastname, String email, int age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
