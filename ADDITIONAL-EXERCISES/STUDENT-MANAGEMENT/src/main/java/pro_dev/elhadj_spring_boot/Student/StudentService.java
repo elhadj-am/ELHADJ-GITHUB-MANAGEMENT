@@ -34,9 +34,7 @@ public class StudentService {
                 .stream()
                 .map(studentMapper::toStudentResponseDto)
                 .collect(Collectors.toList());
-        
     }
-
 
     public List<StudentResponseDto> findStudentsByFirstname(String firstname) {
         return studentRepository.findAllByFirstnameContaining(firstname)
