@@ -10,6 +10,7 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -110,4 +111,62 @@ class StudentServiceTest {
         verify(studentRepository, times(1)).findAll();
     }
 
+    @Test
+    public void shoud_successfully_find_by_id() {
+
+        // Given
+        Integer studentId = 1;
+        Student student = new Student(
+                "John",
+                "Doe",
+                "john@email.com",
+                20
+        );
+
+        // Mock the calls
+        when(studentRepository.findById(studentId))
+                .thenReturn(Optional.of(student));
+        when(studentMapper.toStudentResponseDto(any(Student.class))).thenReturn(new StudentResponseDto(
+                "John",
+                "Doe",
+                "john@email.com"));
+
+        // When
+        StudentResponseDto studentResponseDto = studentService.findStudentById(studentId);
+
+        // Then
+        assertEquals(student.getFirstname(), studentResponseDto.firstname());
+        assertEquals(student.getLastname(), studentResponseDto.lastname());
+        assertEquals(student.getEmail(), studentResponseDto.email());
+        verify(studentRepository, times(1)).findById(studentId);
+    }
+
+    @Test
+    public void shoud_successfully_find_by_name() {
+
+        // Given
+        String studentName = "John";
+        List<Student> students = new ArrayList<>();
+        students.add(new Student(
+                "John",
+                "Doe",
+                "john@email.com",
+                22));
+
+        // Mock the calls
+        when(studentRepository.findAllByFirstnameContaining(studentName))
+                .thenReturn(students);
+        when(studentMapper.toStudentResponseDto(any(Student.class))).thenReturn(new StudentResponseDto(
+                "John",
+                "Doe",
+                "john@email.com"));
+
+        // When
+        List<StudentResponseDto> studentResponseDto = studentService.findStudentsByFirstname(studentName);
+
+        // Then
+        assertEquals(students.size(), studentResponseDto.size());
+        verify(studentRepository, times(1))
+                .findAllByFirstnameContaining(studentName);
+    }
 }
