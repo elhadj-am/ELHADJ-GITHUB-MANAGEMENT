@@ -169,4 +169,25 @@ class StudentServiceTest {
         verify(studentRepository, times(1))
                 .findAllByFirstnameContaining(studentName);
     }
+
+
+    @Test
+    public void shoud_successfully_delete_by_id() {
+        Integer studentId = 1;
+
+        List<Student> students = new ArrayList<>();
+        students.add(new Student(
+                "John",
+                "Doe",
+                "john@email.com",
+                33));
+
+        // When
+        studentService.deleteStudent(studentId);
+
+        // Then
+        verify(studentRepository).deleteById(any());
+        verify(studentRepository, times(1)).deleteById(any());
+
+    }
 }
