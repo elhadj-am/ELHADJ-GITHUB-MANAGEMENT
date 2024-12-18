@@ -40,4 +40,3 @@ A "TODO List" app is designed to help users organize their tasks and activities,
 - **Todoist:** Simple, intuitive task management.
 
 In short, a TODO List app is an essential tool to boost organization and productivity.
-
