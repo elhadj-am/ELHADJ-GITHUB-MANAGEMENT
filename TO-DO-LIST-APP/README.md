@@ -10,7 +10,7 @@ A "TODO List" app is designed to help users organize their tasks and activities,
    Add tasks with titles and optional descriptions.
 
 2. **Task Organization:**  
-   Sort tasks by category, priority, or projects.
+   Sort tasks by category, priority, or projects. 
 
 3. **Priority Management:**  
    Assign priority levels (low, medium, high) or deadlines to tasks.
