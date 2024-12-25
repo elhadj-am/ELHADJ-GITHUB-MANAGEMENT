@@ -5,12 +5,12 @@
   width: 500px;
   margin: 0 auto;
   margin-top: 50px;
-  box-shadow: 0 4px 6px rgb (0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
 }
 
 .modernInput {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 80%;
   border: none;
   color: black;
   font-size: 16px;
@@ -21,13 +21,15 @@
 }
 
 .modernButton {
-  display: inline-block;
   border: none;
+  display: inline-block;
   background-color: #f7ca18;
   padding: 12px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .inputContainer {

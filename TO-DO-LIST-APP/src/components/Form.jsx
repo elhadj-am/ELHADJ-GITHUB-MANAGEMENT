@@ -1,5 +1,6 @@
 import { useState } from "react";
-import styles from "./Form.module.css";
+import styles from "./form.module.css";
+
 export default function Form({ todos, setTodos }) {
   const [todo, setTodo] = useState("");
 
@@ -10,13 +11,13 @@ export default function Form({ todos, setTodos }) {
   }
   return (
     <form className={styles.todoform} onSubmit={handleSubmit}>
-      <div className="flex">
+      <div className={styles.inputContainer}>
         <input
           className={styles.modernInput}
           type="text"
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
-          placeholder="Enter a Todo Item "
+          placeholder="Enter a Todo Item"
         />
         <button className={styles.modernButton} type="submit">
           Add
