@@ -47,7 +47,7 @@ Here's a list of essential topics to learn in JavaScript, ordered from beginner 
 - Modules (`import` and `export`)  
 - Promises and `async/await`  
 
----
+--- 
 
 ### **6. Asynchronous JavaScript**
 - Callbacks  
