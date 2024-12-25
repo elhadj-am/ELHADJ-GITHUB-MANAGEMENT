@@ -3,6 +3,7 @@
 
 In this repository, we will create exercises around the various elements below, which I consider the basics, and we will also work on small projects, always focused on these elements.
 
+
 Here's a list of essential topics to learn in JavaScript, ordered from beginner to advanced:
 
 ---
@@ -86,7 +87,3 @@ Here's a list of essential topics to learn in JavaScript, ordered from beginner 
 - Version control with Git  
 - Module bundlers (Webpack, Vite)  
 - Package managers (npm, Yarn)  
-
----
-
-Let me know if you'd like resources or examples for any of these topics!
