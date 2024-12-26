@@ -87,3 +87,4 @@ Here's a list of essential topics to learn in JavaScript, ordered from beginner 
 - Version control with Git  
 - Module bundlers (Webpack, Vite)  
 - Package managers (npm, Yarn)  
+
