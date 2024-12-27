@@ -25,3 +25,7 @@
   border-radius: 8px;
   margin-top: -5;
 }
+
+.completed {
+  text-decoration: line-through;
+}
