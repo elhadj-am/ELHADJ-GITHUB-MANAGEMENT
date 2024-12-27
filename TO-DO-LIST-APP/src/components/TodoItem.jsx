@@ -13,6 +13,8 @@ export default function TodoItem({ x: item, todos, setTodos }) {
     setTodos(newArray);
   }
   const classNameUsed = item.done ? styles.completed : "";
+
+  let totalDone = todos.filter((todo) => todo.done === true).lenght;
   return (
     <div className={styles.item}>
       <div className={styles.itemName}>
@@ -31,6 +33,7 @@ export default function TodoItem({ x: item, todos, setTodos }) {
       </div>
 
       <hr className={styles.line} />
+      <h3>{totalDone}</h3>
     </div>
   );
 }
