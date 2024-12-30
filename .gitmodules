@@ -1,0 +1,3 @@
+[submodule "STUDENT-MANAGEMENT"]
+	path = STUDENT-MANAGEMENT
+	url = https://github.com/elhadj-am/STUDENT-MANAGEMENT.git
