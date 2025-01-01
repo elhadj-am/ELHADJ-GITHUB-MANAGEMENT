@@ -4,3 +4,6 @@
 [submodule "RECIPE-CATALOG"]
 	path = RECIPE-CATALOG
 	url = https://github.com/elhadj-am/RECIPE-CATALOG.git
+[submodule "FAMILY-TREE"]
+	path = FAMILY-TREE
+	url = https://github.com/elhadj-am/FAMILY-TREE.git
