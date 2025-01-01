@@ -1,3 +1,6 @@
 [submodule "STUDENT-MANAGEMENT"]
 	path = STUDENT-MANAGEMENT
 	url = https://github.com/elhadj-am/STUDENT-MANAGEMENT.git
+[submodule "RECIPE-CATALOG"]
+	path = RECIPE-CATALOG
+	url = https://github.com/elhadj-am/RECIPE-CATALOG.git
