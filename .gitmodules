@@ -7,3 +7,6 @@
 [submodule "FAMILY-TREE"]
 	path = FAMILY-TREE
 	url = https://github.com/elhadj-am/FAMILY-TREE.git
+[submodule "ADDITIONAL-EXERCISES/SPRING-BOOT-MULTITHREADING"]
+	path = ADDITIONAL-EXERCISES/SPRING-BOOT-MULTITHREADING
+	url = https://github.com/elhadj-am/SPRING-BOOT-MULTITHREADING.git
