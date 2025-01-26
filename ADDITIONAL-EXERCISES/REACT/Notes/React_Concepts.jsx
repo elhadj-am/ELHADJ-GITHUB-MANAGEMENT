@@ -58,7 +58,7 @@ export function App(props) {
 
 
 
-Q°? Incrementer / Decrementer un conteur Versions useState et useReducer -------------------------------
+Incrementer / Decrementer un conteur Versions useState et useReducer -------------------------------
 
 import { useReducer, useState } from "react";
 
@@ -95,3 +95,44 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+useReducer With simple Object -------------------------------
+
+
+import { useReducer, useState } from "react";
+
+export default function useReducerWithObject() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+
+  function reducer(state, action) {
+    if (action.type == "Increment") {
+      //return state + 1;
+      return { ...state, count: state.count + action.payload };
+    }
+
+    if (action.type == "Decrement") {
+      //return state - action.payload;
+      return { ...state, count: state.count - action.payload };
+    }
+  }
+
+  return (
+    <div className="App">
+      <h2>Start ---- useReducerWithObject ---</h2>
+      <button onClick={() => dispatch({ type: "Increment", payload: 1 })}>
+        Increment
+      </button>
+      <button onClick={() => dispatch({ type: "Decrement", payload: 1 })}>
+        Decrement
+      </button>
+      <h1>{state.count}</h1>
+    </div>
+  );
+}
+
+
+
+useReducer With Complexe Object -------------------------------
